@@ -1,0 +1,9 @@
+<li>
+  <%= link_to(registration.user.name, registration.user) %>
+  <span class="date">
+    <%= time_ago_in_words(registration.created_at) %> ago
+  </span>
+  <span class="how-heard">
+    (<%= registration.how_heard %>)
+  </span>
+</li>
